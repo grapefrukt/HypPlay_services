@@ -177,7 +177,7 @@ public class PlayServices implements GameHelper.GameHelperListener{
 		static public int isAvailable( ){
 
 			final int resultCode = GooglePlayServicesUtil.isGooglePlayServicesAvailable( HypPlayServices.mainContext );
-			if(resultCode != ConnectionResult.SUCCESS){
+			/*if(resultCode != ConnectionResult.SUCCESS){
 				HypPlayServices.mainActivity.runOnUiThread(
 				new Runnable( ) {
 					public void run() {
@@ -186,8 +186,7 @@ public class PlayServices implements GameHelper.GameHelperListener{
 								dialog.show();
 					}
 				});
-
-			}
+			}*/
 
 
 			return resultCode;
